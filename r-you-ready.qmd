@@ -2,7 +2,9 @@
 title: "Lab 01 - R You Ready?"
 author: "Lucy D'Agostino McGowan"
 date: ""
-format: html
+format: 
+  html:
+    self-contained: true
 editor: visual
 ---
 
@@ -40,7 +42,7 @@ And next calculate the correlation between `x` and `y` in this dataset:
 
 ```{r}
 #| label: cor-dino
-dino_data %>%
+dino_data |>
   summarize(r = cor(x, y))
 ```
 
